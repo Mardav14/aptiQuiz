@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import make_password
+from base.models import Test
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,3 +13,8 @@ class UserSerializer(serializers.ModelSerializer):
         password = make_password(validated_data.get('password'))
         validated_data['password'] = password
         return super().create(validated_data)
+    
+class TestSerialiser(serializers.ModelSerializer):
+    class Meta:
+        model = Test
+        fields = '__all__'

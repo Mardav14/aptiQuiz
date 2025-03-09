@@ -9,13 +9,14 @@ const LoginPage = () => {
   
       <div className='container py-5' style={{width: "50%"}}>
     <Form onSubmit={loginUser}>
+      <br/><br/>
     <Form.Group className="mb-3" controlId="formBasicUserName">
-        <Form.Label>Username</Form.Label>
+        <Form.Label><div className='baseText'>Username</div> </Form.Label>
         <Form.Control type="text" placeholder="Enter username" name = "username" />
        </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>Password</Form.Label>
+        <Form.Label><div className='baseText'>Password</div></Form.Label>
         <Form.Control type="password" placeholder="Password" name = "password"/>
       </Form.Group>
       

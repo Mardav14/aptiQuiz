@@ -10,9 +10,9 @@ import Button from 'react-bootstrap/Button'
 const NavBar = () => {
     const {user, logoutUser} = useContext(AuthContext)
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="dark" data-bs-theme="dark" style = {{position:"fixed", top:"0px", left:"0px", "zIndex": "100", width:"100%"}}>
         <Container>
-          <Navbar.Brand href="/">Stock Market App</Navbar.Brand>
+          <Navbar.Brand href="/">AptiQuiz</Navbar.Brand>
           <Nav className="me-auto">
             <Link  className='nav-link' to='/user'>Home</Link>
             <Link className='nav-link' to='/register'>Register</Link>
