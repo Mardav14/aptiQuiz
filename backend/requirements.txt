@@ -1,5 +1,10 @@
 Django==4.2.4
-django-cors-headers==4.3.1
 djangorestframework==3.14.0
-djangorestframework-simplejwt==5.3.1
-PyJWT==2.8.0
+djangorestframework_simplejwt==5.3.1
+django-cors-headers==4.3.1
+sqlparse==0.4.4
+tzdata==2023.3
+asgiref==3.7.2
+packaging==23.2
+whitenoise==6.9.0
+gunicorn==23.0.0
