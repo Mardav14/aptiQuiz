@@ -12,7 +12,7 @@ const HomePage = () => {
   console.log(user.username)
   let [tests, setTests] = useState()
   let getTests = async ()=>{
-    let response = await fetch("http://127.0.0.1:8000/api/tests", {
+    let response = await fetch("https://aptiquiz-backend.onrender.com/api/tests", {
         method : "GET",
         headers : {
           "Content-Type": "application/json" 
