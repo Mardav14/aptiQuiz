@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e=0^&%=r=j+ad@thr828g2bqiow#_i_cxsjk##wj@wyi682%th
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aptiquiz-backend.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -148,3 +148,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
+
+STATIC_ROOT  = BASE_DIR/ "staticfiles"
